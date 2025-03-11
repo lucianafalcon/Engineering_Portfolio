@@ -9,7 +9,7 @@ In the File, you will find how to carry out this process, which requires:
 - Exploring strategies to achieve a constant current injection process and simulating the response for VG = 11V.</font></small>
 
 ## 2. Project Planning
-"This section covers essential aspects of engineering project planning and management, including methodologies, the steps involved in managing projects, understanding market needs,
+This section covers essential aspects of engineering project planning and management, including methodologies, the steps involved in managing projects, understanding market needs,
 product requirements, and the key phases of project execution.
 
 The File includes:
