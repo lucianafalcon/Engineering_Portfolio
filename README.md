@@ -1,4 +1,4 @@
-📌 This is a repository of engineering practical assignments I have developed.
+📌 A showcase of my engineering projects and technical work. This repository includes examples of my experience in electronics, highlighting both my academic and practical expertise. It offers insight into my problem-solving abilities and creative approach to engineering challenges.
 
 ## 1. MOSFET Memory Cell Programming
 
