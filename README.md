@@ -10,7 +10,29 @@ In the File, you will find how to carry out this process, which includes:
 - Analyzing the changes in the results when VG = 12V and VG = 13V.
 - Exploring strategies to achieve a constant current injection process and simulating the response for VG = 11V.</font></small>
 
-## 2. Project Planning
+## 2. Semiconductor Device Modeling
+This File contains the complete development of the technical report titled "Modeling of Semiconductor Devices: Diode, Bipolar Junction Transistor (BJT), and N-Channel MOSFET" by Luciana Falcon. The project thoroughly analyzes the theoretical and practical behavior of fundamental electronic devices through simulations, analytical modeling, and comparison with real manufacturer data.
+
+Objective:
+To build a solid understanding of modeling, simulation, and design of semiconductor devices, bridging theory and real-world application through practical tools and hands-on experimentation.
+
+Diode:
+- I-V characteristic simulated in LTSpice and parameter extraction (Is, n) using Python.
+- Analysis under forward and reverse bias using large- and small-signal models.
+- Circuit modeling using small-signal equivalent (MPS) and comparison with transient simulation results.
+
+Bipolar Junction Transistor (BJT):
+- Extraction of key parameters (Is, β, VA, VCEsat) from simulated curves and datasheets.
+- Biasing analysis with and without emitter resistance (RE).
+- Study of collector current (IC) variation with temperature.
+
+N-Channel MOSFET:
+- Development of a custom transistor model based on simulated transfer and output curves.
+- Design and analysis of a common-source single-stage amplifier.
+- Examination of distortion, small-signal parameters (gm, Rin, Rout, Av), and validation using the BSP89 model.
+
+
+## 3. Project Planning
 This section covers essential aspects of engineering project planning and management, including methodologies, the steps involved in managing projects, understanding market needs,
 product requirements, and the key phases of project execution.
 
