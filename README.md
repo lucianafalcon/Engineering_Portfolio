@@ -13,7 +13,7 @@ This document is a comprehensive technical summary covering key concepts in comp
 - Encapsulation and data flow across layers
 - Applications and Examples
 
-llustrations and examples from the textbooks Kurose & Ross, support the explanations. This material is useful for students and professionals seeking a solid foundation in networking principles.
+Illustrations and examples from the textbooks by Kurose & Ross support the explanations throughout this document. I created this material to serve as a solid foundation for anyone seeking to understand the principles of computer networking.
 
 ## 2. MOSFET Memory Cell Programming
 
