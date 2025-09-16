@@ -24,8 +24,16 @@ This second volume continues the study of computer networking, expanding on the 
 - Software-Defined Networking (SDN): Router architecture, SDN concepts, OpenFlow protocol, P4 programming language, and Open Compute Project (OCP).
 - Physical Layer: Transmission media, modulation, multiplexing, and theoretical limits (Nyquist and Shannon theorems).
 
+## 3. Low-Pass Twin-T Notch Filter
 
-## 3. MOSFET Memory Cell Programming
+The designed Notch Twin-T filter is a band-reject filter cascaded with a low-pass stage. Its main function is to eliminate a specific frequency at 79.5 Hz, allowing the rest of the signal to pass while attenuating frequencies above 954.92 Hz due to the low-pass response.
+This type of filter is particularly useful in cardiac monitoring devices, such as electrocardiographs (ECG), where power line interference or low-frequency muscle noise is common and can affect signal quality. By adjusting the values of the notch components, the signal can be cleaned, enhancing monitoring accuracy and improving diagnostic reliability.
+
+</p align="center">
+  <img src="assets/notch-low-pass-filter.gif" alt="Twin-T Notch Filter Demo" width="400"/>
+</p>
+
+## 4. MOSFET Memory Cell Programming
 
 <small><font color="gray">The programming of a memory cell based on a MOSFET transistor consists of charging the floating gate with electrons, which occurs exclusively through Fowler-Nordheim tunneling from the conduction band of the substrate.
 
@@ -35,7 +43,7 @@ In the File, you will find how to carry out this process, which includes:
 - Analyzing the changes in the results when VG = 12V and VG = 13V.
 - Exploring strategies to achieve a constant current injection process and simulating the response for VG = 11V.</font></small>
 
-## 4. Semiconductor Device Modeling
+## 5. Semiconductor Device Modeling
 This File contains the complete development of the technical report titled "Modeling of Semiconductor Devices: Diode, Bipolar Junction Transistor (BJT), and N-Channel MOSFET" by Luciana Falcon. The project thoroughly analyzes the theoretical and practical behavior of fundamental electronic devices through simulations, analytical modeling, and comparison with real manufacturer data.
 
 Objective:
@@ -57,7 +65,7 @@ N-Channel MOSFET:
 - Examination of distortion, small-signal parameters (gm, Rin, Rout, Av), and validation using the BSP89 model.
 
 
-## 5. Project Planning
+## 6. Project Planning
 This section covers essential aspects of engineering project planning and management, including methodologies, the steps involved in managing projects, understanding market needs,
 product requirements, and the key phases of project execution.
 
