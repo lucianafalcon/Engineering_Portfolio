@@ -81,7 +81,7 @@ The file includes:
 
 ## Semiconductor Device Modeling
 
-This file contains the complete development of the technical report titled "Modeling of Semiconductor Devices: Diode, Bipolar Junction Transistor (BJT), and N-Channel MOSFET" by Luciana Falcon. The project thoroughly analyzes the theoretical and practical behavior of fundamental electronic devices through simulations, analytical modeling, and comparison with real manufacturer data.
+This file contains the complete development of the technical report titled "Modeling of Semiconductor Devices: Diode, Bipolar Junction Transistor (BJT), and N-Channel MOSFET" by me. The project thoroughly analyzes the theoretical and practical behavior of fundamental electronic devices through simulations, analytical modeling, and comparison with real manufacturer data.
 
 **Objective:**  
 To build a solid understanding of modeling, simulation, and design of semiconductor devices, bridging theory and real-world application through practical tools and hands-on experimentation.
