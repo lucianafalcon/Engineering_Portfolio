@@ -1,6 +1,6 @@
 📌 A showcase of my engineering projects and technical work. This repository includes examples of my experience in electronics, highlighting both my academic and practical expertise. It offers insight into my problem-solving abilities and creative approach to engineering challenges.
 
-## 1. Communication Network Fundamentals - Vol 1 
+## Communication Network Fundamentals - Vol 1 
 
 This document is a comprehensive technical summary covering key concepts in computer networks. It introduces the structure and function of communication systems, including physical components, protocols, performance metrics, and communication models like OSI and TCP/IP. Topics include:
 
@@ -15,7 +15,7 @@ This document is a comprehensive technical summary covering key concepts in comp
 
 Illustrations and examples from the textbooks by Kurose & Ross support the explanations throughout this document. I created this material to serve as a solid foundation for anyone seeking to understand the principles of computer networking.
 
-## 2. Communication Network Fundamentals - Vol 2
+## Communication Network Fundamentals - Vol 2
 
 This second volume continues the study of computer networking, expanding on the foundations introduced in Volume 1. It addresses more specialized topics across different network layers:
 
@@ -24,7 +24,7 @@ This second volume continues the study of computer networking, expanding on the 
 - Software-Defined Networking (SDN): Router architecture, SDN concepts, OpenFlow protocol, P4 programming language, and Open Compute Project (OCP).
 - Physical Layer: Transmission media, modulation, multiplexing, and theoretical limits (Nyquist and Shannon theorems).
 
-## 3. Low-Pass Twin-T Notch Filter
+## Low-Pass Twin-T Notch Filter
 
 The designed Notch Twin-T filter is a band-reject filter cascaded with a low-pass stage. Its main function is to eliminate a specific frequency at 79.5 Hz, allowing the rest of the signal to pass while attenuating frequencies above 954.92 Hz due to the low-pass response.
 This type of filter is particularly useful in cardiac monitoring devices, such as electrocardiographs (ECG), where power line interference or low-frequency muscle noise is common and can affect signal quality. By adjusting the values of the notch components, the signal can be cleaned, enhancing monitoring accuracy and improving diagnostic reliability.
@@ -33,7 +33,7 @@ This type of filter is particularly useful in cardiac monitoring devices, such a
   <img src="assets/notch-low-pass-filter.gif" alt="Twin-T Notch Filter Demo" width="400"/>
 </p>
 
-## 4. MOSFET Memory Cell Programming
+## MOSFET Memory Cell Programming
 
 <small><font color="gray">The programming of a memory cell based on a MOSFET transistor consists of charging the floating gate with electrons, which occurs exclusively through Fowler-Nordheim tunneling from the conduction band of the substrate.
 
@@ -43,7 +43,20 @@ In the File, you will find how to carry out this process, which includes:
 - Analyzing the changes in the results when VG = 12V and VG = 13V.
 - Exploring strategies to achieve a constant current injection process and simulating the response for VG = 11V.</font></small>
 
-## 5. Semiconductor Device Modeling
+## Project Planning
+This section covers essential aspects of engineering project planning and management, including methodologies, the steps involved in managing projects, understanding market needs,
+product requirements, and the key phases of project execution.
+
+The File includes:
+
+- Project Design.
+- Planning Process.
+- Project Management.
+- Risk Management and Feasibility.
+- Project Life Cycle.
+- Quality Function Deployment (QFD).
+
+## Semiconductor Device Modeling
 This File contains the complete development of the technical report titled "Modeling of Semiconductor Devices: Diode, Bipolar Junction Transistor (BJT), and N-Channel MOSFET" by Luciana Falcon. The project thoroughly analyzes the theoretical and practical behavior of fundamental electronic devices through simulations, analytical modeling, and comparison with real manufacturer data.
 
 Objective:
@@ -65,15 +78,3 @@ N-Channel MOSFET:
 - Examination of distortion, small-signal parameters (gm, Rin, Rout, Av), and validation using the BSP89 model.
 
 
-## 6. Project Planning
-This section covers essential aspects of engineering project planning and management, including methodologies, the steps involved in managing projects, understanding market needs,
-product requirements, and the key phases of project execution.
-
-The File includes:
-
-- Project Design.
-- Planning Process.
-- Project Management.
-- Risk Management and Feasibility.
-- Project Life Cycle.
-- Quality Function Deployment (QFD).
