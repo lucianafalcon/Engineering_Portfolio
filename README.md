@@ -8,6 +8,7 @@
 4. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)
 5. [Project Planning](Proyect_Planning.pdf)
 6. [Semiconductor Device Modeling](Semiconductor_Device_Modeling.pdf)
+7. [Voice Signal Characterization](Voice_Signal_Characterization.pdf)
 
 ---
 
@@ -103,3 +104,13 @@ To build a solid understanding of modeling, simulation, and design of semiconduc
 - Development of a custom transistor model based on simulated transfer and output curves
 - Design and analysis of a common-source single-stage amplifier
 - Examination of distortion, small-signal parameters (gm, Rin, Rout, Av), and validation using the BSP89 model
+  
+---
+
+## Voice Signal Characterization
+
+This project explores various techniques for analyzing and transforming speech signals. It includes: Spectral analysis using the Fourier Transform (FFT), short-Time Fourier Transform (STFT) for spectrograms, time-domain and frequency-domain pitch and speed modifications, TD-PSOLA and Phase Vocoder techniques, and the results demonstrate the value of spectral-temporal processing for speech transformation, pitch shifting, and intelligibility preservation in different use cases.
+
+
+
+
