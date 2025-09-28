@@ -14,6 +14,20 @@
 
 ---
 
+## Application and Transport Layers with Wireshark
+
+In computer networks, protocols are organized into layers, each with specific functions that ensure proper information exchange. Among these, the Application and Transport layers are essential to understanding how users access network services and how communication between devices is maintained.
+
+Application Layer: Acts as the interface between the user and the network, handling direct interactions such as HTTP requests.
+
+Transport Layer (TCP): Ensures a reliable end-to-end connection, guaranteeing correct and ordered data delivery.
+
+Analyzing traffic captures with Wireshark allows observing these layers in action: the client requests resources via HTTP, the server responds with the requested data, and TCP ensures the communication is reliable.
+
+The project aims to provide a clear, practical view of these interactions, showing how theoretical network concepts translate into real traffic.
+
+---
+
 ## Communication Network Fundamentals - Vol 1 
 
 This document is a comprehensive technical summary covering key concepts in computer networks. It introduces the structure and function of communication systems, including physical components, protocols, performance metrics, and communication models like OSI and TCP/IP. Topics include:
