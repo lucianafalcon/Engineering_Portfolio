@@ -1,132 +1,121 @@
-📌 A showcase of my engineering projects and technical work. This repository includes examples of my experience in electronics, highlighting both my academic and practical expertise. It offers insight into my problem-solving abilities and creative approach to engineering challenges.
+# Engineering Portfolio
+
+📌 A showcase of my engineering projects and technical work. This repository highlights my academic and practical experience in electronics and networking, demonstrating problem-solving skills and creativity in engineering challenges.
+
+---
+
+## Skills & Tools
+
+**Electronics:** LTSpice, MOSFET/BJT modeling, Analog/Digital circuits  
+**Programming:** Python, Node.js, MATLAB  
+**Networking:** Wireshark, TCP/IP, OSI, HTTP/SMTP/DNS  
+**Other Tools:** Git, PDF Documentation, Project Planning & Management  
+
+---
 
 ## Table of Contents
 
-1. [Application and Transport Layers with Wireshark](Application_and_Transport_Layers_with_Wireshark.pdf)
-2. [Communication Network Fundamentals - Vol 1](Communication_Network_Fundamentals_Vol_1.pdf)
-3. [Communication Network Fundamentals - Vol 2](Communication_Network_Fundamentals_Vol_2.pdf)
-4. [Low-Pass Twin-T Notch Filter](Low-Pass_Twin-T_Notch_Filter.pdf)
-5. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)
-6. [Project Planning](Proyect_Planning.pdf)
-7. [Semiconductor Device Modeling](Semiconductor_Device_Modeling.pdf)
-8. [Voice Signal Characterization](Voice_Signal_Characterization.pdf)
-
+1. [Application and Transport Layers with Wireshark](Application_and_Transport_Layers_with_Wireshark.pdf)  
+2. [Communication Network Fundamentals - Vol 1](Communication_Network_Fundamentals_Vol_1.pdf)  
+3. [Communication Network Fundamentals - Vol 2](Communication_Network_Fundamentals_Vol_2.pdf)  
+4. [Low-Pass Twin-T Notch Filter](#low-pass-twin-t-notch-filter)  
+5. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)  
+6. [Project Planning](Proyect_Planning.pdf)  
+7. [Semiconductor Device Modeling](Semiconductor_Device_Modeling.pdf)  
+8. [Voice Signal Characterization](Voice_Signal_Characterization.pdf)  
 
 ---
 
 ## Application and Transport Layers with Wireshark
 
-In computer networks, protocols are organized into layers, each with specific functions that ensure proper information exchange. Among these, the Application and Transport layers are essential to understanding how users access network services and how communication between devices is maintained.
+**Summary:** Observed and analyzed real network traffic to understand Application and Transport layer protocols in practice.
 
-Application Layer: Acts as the interface between the user and the network, handling direct interactions such as HTTP requests.
+- **Application Layer:** Interfaces with the user; handles HTTP requests.  
+- **Transport Layer (TCP):** Ensures reliable end-to-end communication.  
+- **Tools:** Wireshark captures demonstrate request-response cycles and TCP reliability.  
 
-Transport Layer (TCP): Ensures a reliable end-to-end connection, guaranteeing correct and ordered data delivery.
-
-Analyzing traffic captures with Wireshark allows observing these layers in action: the client requests resources via HTTP, the server responds with the requested data, and TCP ensures the communication is reliable.
-
-The project aims to provide a clear, practical view of these interactions, showing how theoretical network concepts translate into real traffic.
+[📄 Full PDF Report](Application_and_Transport_Layers_with_Wireshark.pdf)  
 
 ---
 
-## Communication Network Fundamentals - Vol 1 
+## Communication Network Fundamentals - Vol 1
 
-This document is a comprehensive technical summary covering key concepts in computer networks. It introduces the structure and function of communication systems, including physical components, protocols, performance metrics, and communication models like OSI and TCP/IP. Topics include:
+**Summary:** Technical summary of networking principles covering architectures, protocols, and performance metrics.
 
-- Network architectures and physical/logical components
-- Communication models such as OSI and TCP/IP
-- Application Protocol: HTTP, SMTP, DNS
-- Transport Layer: UDP, TCP, Performance
-- IP Architecture: IPv4, NAT, Subnetting, IPv6, CIDR
-- Network performance: delay, throughput, and congestion control
-- Encapsulation and data flow across layers
-- Applications and Examples
+- **Topics:** OSI/TCP-IP, HTTP/SMTP/DNS, UDP/TCP, IP addressing, NAT, Subnetting, Network performance  
+- **Illustrations:** Based on Kurose & Ross textbooks  
+- **Purpose:** Provides a solid foundation for understanding networking concepts  
 
-Illustrations and examples from the textbooks by Kurose & Ross support the explanations throughout this document. I created this material to serve as a solid foundation for anyone seeking to understand the principles of computer networking.
+[📄 Full PDF Report](Communication_Network_Fundamentals_Vol_1.pdf)  
 
 ---
 
 ## Communication Network Fundamentals - Vol 2
 
-This second volume continues the study of computer networking, expanding on the foundations introduced in Volume 1. It addresses more specialized topics across different network layers:
+**Summary:** Advanced topics in networking, including LANs, routing protocols, SDN, and physical layer theory.
 
-- Data Link Layer & LAN Networks: ARP protocol, internal routing (RIP, OSPF), and routing algorithms (Distance Vector, Link State)
-- Network Architecture: Evolution of the Internet, reference links, interconnection, and classification of network types
-- Software-Defined Networking (SDN): Router architecture, SDN concepts, OpenFlow protocol, P4 programming language, and Open Compute Project (OCP)
-- Physical Layer: Transmission media, modulation, multiplexing, and theoretical limits (Nyquist and Shannon theorems)
+- **Topics:** ARP, RIP, OSPF, Distance Vector, Link State, SDN concepts (OpenFlow, P4), Transmission media, Nyquist/Shannon theorems  
+
+[📄 Full PDF Report](Communication_Network_Fundamentals_Vol_2.pdf)  
 
 ---
 
 ## Low-Pass Twin-T Notch Filter
 
-The designed Notch Twin-T filter is a band-reject filter cascaded with a low-pass stage. Its main function is to eliminate a specific frequency at 79.5 Hz, allowing the rest of the signal to pass while attenuating frequencies above 954.92 Hz due to the low-pass response.  
-This type of filter is particularly useful in cardiac monitoring devices, such as electrocardiographs (ECG), where power line interference or low-frequency muscle noise is common and can affect signal quality. By adjusting the values of the notch components, the signal can be cleaned, enhancing monitoring accuracy and improving diagnostic reliability.
+**Summary:** Design and simulation of a filter to remove 79.5 Hz interference while allowing other signals to pass, useful for ECG devices.
 
 <p align="center">
   <img src="assets/notch-low-pass-filter.gif" alt="Twin-T Notch Filter Demo" width="400"/>
 </p>
 
+- **Function:** Band-reject at 79.5 Hz, low-pass cutoff ~955 Hz  
+- **Applications:** Cardiac monitoring, signal cleaning for accurate diagnostics  
+
 ---
 
 ## MOSFET Memory Cell Programming
 
-<small>
-The programming of a memory cell based on a MOSFET transistor consists of charging the floating gate with electrons, which occurs exclusively through Fowler-Nordheim tunneling from the conduction band of the substrate.
+**Summary:** Simulation and analysis of floating-gate MOSFET memory cell programming using Fowler-Nordheim tunneling.
 
-In the file, you will find how to carry out this process, which includes:
+- **Tasks:**  
+  - Current evolution and threshold voltage for VG = 11V  
+  - Analysis for VG = 12V & 13V  
+  - Constant current injection strategy and simulation  
+- **Outcome:** Demonstrates advanced semiconductor knowledge and simulation skills  
 
-- Simulating the temporal evolution of the current injected into the floating gate and the threshold voltage for a control gate voltage of VG = 11V, determining the maximum achievable value of Vt
-- Analyzing the changes in the results when VG = 12V and VG = 13V
-- Exploring strategies to achieve a constant current injection process and simulating the response for VG = 11V
-</small>
+[📄 Full PDF / Simulation File](MOSFET_Memory_Cell_Programming.pdf)  
 
 ---
 
 ## Project Planning
 
-This section covers essential aspects of engineering project planning and management, including methodologies, the steps involved in managing projects, understanding market needs, product requirements, and the key phases of project execution.
+**Summary:** Comprehensive guide to planning and managing engineering projects.
 
-The file includes:
+- **Contents:** Project design, planning process, risk management, feasibility, lifecycle, Quality Function Deployment (QFD)  
 
-- Project Design
-- Planning Process
-- Project Management
-- Risk Management and Feasibility
-- Project Life Cycle
-- Quality Function Deployment (QFD)
+[📄 Full PDF Report](Proyect_Planning.pdf)  
 
 ---
 
 ## Semiconductor Device Modeling
 
-This file contains the complete development of the technical report titled "Modeling of Semiconductor Devices: Diode, Bipolar Junction Transistor (BJT), and N-Channel MOSFET" by me. The project thoroughly analyzes the theoretical and practical behavior of fundamental electronic devices through simulations, analytical modeling, and comparison with real manufacturer data.
+**Summary:** Complete analysis of diodes, BJTs, and N-Channel MOSFETs with simulations, analytical modeling, and real-world comparison.
 
-**Objective:**  
-To build a solid understanding of modeling, simulation, and design of semiconductor devices, bridging theory and real-world application through practical tools and hands-on experimentation.
+- **Diode:** I-V curves, forward/reverse bias, small-signal modeling  
+- **BJT:** Parameter extraction, biasing analysis, temperature effects  
+- **MOSFET:** Custom model, amplifier design, distortion analysis, validation with BSP89  
 
-### Diode
+[📄 Full PDF Report](Semiconductor_Device_Modeling.pdf)  
 
-- I-V characteristic simulated in LTSpice and parameter extraction (Is, n) using Python
-- Analysis under forward and reverse bias using large- and small-signal models
-- Circuit modeling using small-signal equivalent (MPS) and comparison with transient simulation results
-
-### Bipolar Junction Transistor (BJT)
-
-- Extraction of key parameters (Is, β, VA, VCEsat) from simulated curves and datasheets
-- Biasing analysis with and without emitter resistance (RE)
-- Study of collector current (IC) variation with temperature
-
-### N-Channel MOSFET
-
-- Development of a custom transistor model based on simulated transfer and output curves
-- Design and analysis of a common-source single-stage amplifier
-- Examination of distortion, small-signal parameters (gm, Rin, Rout, Av), and validation using the BSP89 model
-  
 ---
 
 ## Voice Signal Characterization
 
-This project explores various techniques for analyzing and transforming speech signals. It includes: Spectral analysis using the Fourier Transform (FFT), short-Time Fourier Transform (STFT) for spectrograms, time-domain and frequency-domain pitch and speed modifications, TD-PSOLA and Phase Vocoder techniques, and the results demonstrate the value of spectral-temporal processing for speech transformation, pitch shifting, and intelligibility preservation in different use cases.
+**Summary:** Analysis and transformation of speech signals using spectral and temporal techniques.
 
+- **Methods:** FFT, STFT, TD-PSOLA, Phase Vocoder  
+- **Applications:** Pitch shifting, speed modification, intelligibility preservation  
 
+[📄 Full PDF Report](Voice_Signal_Characterization.pdf)  
 
 
