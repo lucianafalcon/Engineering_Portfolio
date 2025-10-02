@@ -15,14 +15,14 @@
 
 ## Table of Contents
 
-1. [Application and Transport Layers with Wireshark](Application_and_Transport_Layers_with_Wireshark.pdf)  
-2. [Communication Network Fundamentals - Vol 1](Communication_Network_Fundamentals_Vol_1.pdf)  
-3. [Communication Network Fundamentals - Vol 2](Communication_Network_Fundamentals_Vol_2.pdf)  
+1. [Application and Transport Layers with Wireshark](#application-and-transport-layers-with-wireshark)  
+2. [Communication Network Fundamentals - Vol 1](#communication-network-fundamentals---vol-1)  
+3. [Communication Network Fundamentals - Vol 2](#communication-network-fundamentals---vol-2)  
 4. [Low-Pass Twin-T Notch Filter](#low-pass-twin-t-notch-filter)  
 5. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)  
-6. [Project Planning](Proyect_Planning.pdf)  
-7. [Semiconductor Device Modeling](Semiconductor_Device_Modeling.pdf)  
-8. [Voice Signal Characterization](Voice_Signal_Characterization.pdf)  
+6. [Project Planning](#project-planning)  
+7. [Semiconductor Device Modeling](#semiconductor-device-modeling)  
+8. [Voice Signal Characterization](#voice-signal-characterization)  
 
 ---
 
@@ -30,9 +30,9 @@
 
 **Summary:** Observed and analyzed real network traffic to understand Application and Transport layer protocols in practice.
 
-- **Application Layer:** Interfaces with the user; handles HTTP requests.  
-- **Transport Layer (TCP):** Ensures reliable end-to-end communication.  
-- **Tools:** Wireshark captures demonstrate request-response cycles and TCP reliability.  
+- **Application Layer:** Interfaces with the user; handles HTTP requests  
+- **Transport Layer (TCP):** Ensures reliable end-to-end communication  
+- **Tools:** Wireshark captures demonstrate request-response cycles and TCP reliability  
 
 [📄 Full PDF Report](Application_and_Transport_Layers_with_Wireshark.pdf)  
 
@@ -65,17 +65,23 @@
 **Summary:** Design and simulation of a filter to remove 79.5 Hz interference while allowing other signals to pass, useful for ECG devices.
 
 <p align="center">
-  <img src="assets/notch-low-pass-filter.gif" alt="Twin-T Notch Filter Demo" width="400"/>
+  <img src="assets/notch-low-pass-filter.gif" alt="Twin-T Notch Filter Demo" width="400" style="border: 2px solid #ddd; border-radius: 8px;"/>
 </p>
 
 - **Function:** Band-reject at 79.5 Hz, low-pass cutoff ~955 Hz  
 - **Applications:** Cardiac monitoring, signal cleaning for accurate diagnostics  
+
+[📄 Full PDF / Simulation File](Low-Pass_Twin-T_Notch_Filter.pdf)  
 
 ---
 
 ## MOSFET Memory Cell Programming
 
 **Summary:** Simulation and analysis of floating-gate MOSFET memory cell programming using Fowler-Nordheim tunneling.
+
+<p align="center">
+  <img src="assets/nmos.gif" alt="N-MOS Demo" width="400" style="border: 2px solid #ddd; border-radius: 8px;"/>
+</p>
 
 - **Tasks:**  
   - Current evolution and threshold voltage for VG = 11V  
@@ -117,5 +123,3 @@
 - **Applications:** Pitch shifting, speed modification, intelligibility preservation  
 
 [📄 Full PDF Report](Voice_Signal_Characterization.pdf)  
-
-
