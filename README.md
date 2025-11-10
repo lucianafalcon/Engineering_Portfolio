@@ -1,13 +1,13 @@
 # Engineering Portfolio
 
-📌 A showcase of my engineering projects and technical work. This repository highlights my academic and practical experience in electronics and networking, demonstrating problem-solving skills and creativity in engineering challenges.
+A showcase of my engineering projects and technical work. This repository highlights my academic and practical experience in electronics and networking, demonstrating problem-solving skills and creativity in engineering challenges.
 
 ---
 
 ## Skills & Tools
 
-**Electronics:** LTSpice, MOSFET/BJT modeling, Analog/Digital circuits  
-**Programming:** Python, Node.js, MATLAB  
+**Electronics:** LTSpice, MOSFET/BJT modeling, Analog/Digital circuits, Component design,  
+**Programming:** Python, Node.js, MATLAB, FreeCAD, C
 **Networking:** Wireshark, TCP/IP, OSI, HTTP/SMTP/DNS  
 **Other Tools:** Git, PDF Documentation, Project Planning & Management  
 
@@ -15,14 +15,52 @@
 
 ## Table of Contents
 
-1. [Application and Transport Layers with Wireshark](#application-and-transport-layers-with-wireshark)  
-2. [Communication Network Fundamentals - Vol 1](#communication-network-fundamentals---vol-1)  
-3. [Communication Network Fundamentals - Vol 2](#communication-network-fundamentals---vol-2)  
-4. [Low-Pass Twin-T Notch Filter](#low-pass-twin-t-notch-filter)  
-5. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)  
-6. [Project Planning](#project-planning)  
-7. [Semiconductor Device Modeling](#semiconductor-device-modeling)  
-8. [Voice Signal Characterization](#voice-signal-characterization)  
+1. [3D Electronic Component Designs for PCB](#3d-electronic-component-designs-for-pcb)
+2. [Microcontroller Projects](#microcontroller-projects)
+4. [Application and Transport Layers with Wireshark](#application-and-transport-layers-with-wireshark)  
+5. [Communication Network Fundamentals - Vol 1](#communication-network-fundamentals---vol-1)  
+6. [Communication Network Fundamentals - Vol 2](#communication-network-fundamentals---vol-2)  
+7. [Low-Pass Twin-T Notch Filter](#low-pass-twin-t-notch-filter)  
+8. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)  
+9. [Project Planning](#project-planning)  
+10. [Semiconductor Device Modeling](#semiconductor-device-modeling)  
+11. [Voice Signal Characterization](#voice-signal-characterization)  
+
+---
+
+## 3D Electronic Component Designs for PCB
+
+**Summary:** 3D models of electronic components I created because they are not available in standard PCB libraries.
+
+<p align="center">
+  <img width="584" height="356" alt="img-3d-components- (1)" src="https://github.com/user-attachments/assets/f9123d49-4aaa-44ad-8958-f7789be5ae5b" />
+</p>
+
+[Download here](https://github.com/lucianafalcon/Engineering_Portfolio/tree/main/Component-Design)  
+Files are in **.FCStd** and can be converted to **.STEP** for PCB software.
+
+---
+
+## Microcontroller Projects
+
+Projects for the **STM32 NUCLEO-F103RB** development board.  
+Covers basic I/O handling, analog acquisition, timer control, and PWM signal generation.
+
+**Keypad & LCD Display – Interactive Menu**  
+- Reads input from a matrix keypad  
+- Displays information on an LCD
+- Implements interactive menu navigation and option selection  
+
+**ADC – Timer – PWM**  
+- Analog-to-digital conversion using the STM32’s built-in ADC from a potentiometer and LDR  
+- Timer configuration for precise PWM signal generation  
+- Real-time LED brightness control based on analog input variation.
+
+[Download here](https://github.com/lucianafalcon/Engineering_Portfolio/tree/main/Microcontroller-Projects)  
+Requirements
+Board: STM32 NUCLEO-F103RB
+IDE: STM32CubeIDE
+Libraries: STM32 HAL (Hardware Abstraction Layer)
 
 ---
 
@@ -71,7 +109,7 @@
 - **Function:** Band-reject at 79.5 Hz, low-pass cutoff ~955 Hz  
 - **Applications:** Cardiac monitoring, signal cleaning for accurate diagnostics  
 
-[📄 Full PDF / Simulation File](Low-Pass_Twin-T_Notch_Filter.pdf)  
+[📄 Full PDF Report](Low-Pass_Twin-T_Notch_Filter.pdf)  
 
 ---
 
@@ -89,7 +127,7 @@
   - Constant current injection strategy and simulation  
 - **Outcome:** Demonstrates advanced semiconductor knowledge and simulation skills  
 
-[📄 Full PDF / Simulation File](MOSFET_Memory_Cell_Programming.pdf)  
+[📄 Full PDF Report](MOSFET_Memory_Cell_Programming.pdf)  
 
 ---
 
