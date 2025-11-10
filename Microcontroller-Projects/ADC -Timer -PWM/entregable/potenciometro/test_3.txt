@@ -1,0 +1,9 @@
+archivo app.c
+#define TEST_NUMBER TEST_3
+
+-----------
+Listado de las 100 muestas en: muestras.xlsx
+
+Media: 695.83	
+
+Desvío estándar: 2.685746139

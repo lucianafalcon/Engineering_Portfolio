@@ -1,0 +1,66 @@
+archivo .ioc
+configuraciones del TIM3 y del RCC
+
+-------------
+TIM3 modo
+canal 1: PWM Generation CH1
+
+-------------
+TIM3 configuracion
+
+- GPIO / pines:
+nombre del pin: PA6	
+asignado a: TIM3_CH1	
+GPIO mode: Alternate Function Push Pull
+velocidad maxima de salida: Low	
+
+- parameteros:
+-- contador 
+Prescaler (PSC)                 0 ➜ el reloj del timer no se divide, usa directamente el clock base del microcontrolador
+Counter Mode                    Up ➜ el contador cuenta desde 0 hasta el valor del AutoReload Register (ARR) y luego se reinicia.
+Counter Period (ARR)            65535 ➜ valor máximo para un timer de 16 bits.
+Internal Clock Division (CKD)   No Division
+Auto-reload preload             Disable ➜ El valor del ARR se actualiza inmediatamente cuando se escribe, no en el próximo update event.
+
+-- trigger Output (TRGO)
+Mode                            PWM mode 1 ➜ en este modo, la salida es activa (HIGH) mientras el contador < CCR1 (Pulse) y luego pasa a baja (LOW).
+Pulse (CCR1)                    0 ➜ el duty cycle es 0 % (la salida siempre en nivel bajo)
+Output compare preload          Enable ➜ el valor de CCR1 se actualiza al final del ciclo, no inmediatamente, lo que evita saltos bruscos de duty cycle.
+Fast Mode                       Disable ➜ No se usa el modo rápido de comparación, lo cual está bien para PWM.
+CH Polarity                     High ➜ La salida es alta mientras el contador < CCR1.
+
+--PWM Generation Channel 1
+Mode                            PWM mode 1 
+Pulse (CCR1)                    0
+Output compare preload          Enable
+Fast Mode                       Disable
+CH Polarity                     High
+
+-------------------------- 
+RCC modo
+High Speed Clock (HSE): Crystal/Ceramic Resonator ➜ reloj de alta velocidad
+Low Speed Clock (LSE): Crystal/Ceramic Resonator ➜ es para el reloj de baja velocidad (típicamente 32.768 kHz), usado por el RTC (reloj en tiempo real).
+Master Clock Output: Deshabilitado ➜ no estás enviando el clock del micro a un pin externo
+
+-------------
+RCC configuracion
+
+- GPIO / pines:
+nombre del pin: PC14-OSC32_IN - asignado: RCC_OSC32_IN
+nombre del pin: PC15-OSC32_OUT - asignado: RCC_OSC32_OUT               
+nombre del pin: PD0-OSC_IN - asignado: RCC_OSC_IN  
+nombre del pin: PD1-OSC_out - asignado: RCC_OSC_OUT 
+
+- parameteros:
+-- sistema
+VDD                            3.3 V ➜ típico de alimentación del microcontrolador.
+Prefetch Buffer                Enabled ➜ permite lecturas más rápidas de memoria Flash (recomendado cuando el reloj del sistema es alto (> 24 MHz))
+Flash Latency (WS)             2 WS (3 CPU cycles) ➜ indica que el sistema está configurado para correr a una frecuencia alta 
+
+-- RCC
+HSI Calibration Value         16 ➜ valor por defecto para el reloj interno HSI, aunque no se está usando (ya que HSE como fuente principal).
+HSE Startup Timeout Value     100 ms ➜ tiempo máximo que espera el sistema a que el cristal externo arranque.
+LSE Startup Timeout Value     5000 ms ➜ tiempo de espera para el oscilador lento (RTC).
+
+
+

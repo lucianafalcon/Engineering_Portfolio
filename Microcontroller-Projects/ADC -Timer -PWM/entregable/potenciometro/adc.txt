@@ -1,0 +1,45 @@
+archivo .ioc
+configuracion del ADC1
+
+--------------------
+ADC modo
+
+- IN0: Totalmente configurado para usarse con ADC1.
+- IN2, IN3, IN5: Están asignados a la función de ADC1, pero no están completamente configurados
+Exti conversion trigger (deshabilitado) *las conversiones ADC deben iniciarse manualmente desde el software.
+ 
+--------------------
+ADC configuracion
+
+- NVIC / insterrupciones:
+Se encuentra habilitada la interrupción global para ADC1 y ADC2, lo cual permite que el sistema genere una 
+interrupción automáticamente al finalizar una conversión ADC.
+
+- GPIO / pines:
+nombre del pin: PA0-WKUP	
+asignado a: ADC1_IN0	
+configuracion de entrada: Analog mode		
+
+- parameteros:
+-- ADC: 
+Data Alignment: right alignment 
+
+-- ADC Regular Conversion Mode:
+Parámetro	                Valor
+Enable Regular Conversion	Enable (habilitado)
+Number Of Conversion	        1
+External Trigger Conversion	Regular Conversion launched by software
+  Rank	                        1
+  Channel	                Channel 0 (IN0)
+  Sampling Time	                1.5 cycles
+
+-- WatchDog / vigilancia automatica:
+Enable Analog WatchDog: (Enabled) → Está activado. El microcontrolador va a vigilar una señal analógica.
+Watchdog Mode: Single regular channel → Solo está vigilando un canal del ADC.
+Analog WatchDog Channel: Channel 0 → Está vigilando el canal 0 del ADC.
+High Threshold: 0 y Low Threshold: 0 → limites para que se dispare el watchdog (cualquier valor distinto de 0 lo dispara).
+Interrupt Mode: Disabled → Aunque el valor se salga del rango, no se va a generar ninguna interrupción.
+
+
+
+

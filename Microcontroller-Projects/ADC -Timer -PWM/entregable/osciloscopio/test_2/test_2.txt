@@ -1,0 +1,40 @@
+archivo app.c
+#define TEST_NUMBER TEST_2
+
+En este test: el potenciómetro controla la frecuencia → prueba de frecuencia variable.
+
+setPWM(htim3, TIM_CHANNEL_1, period, period/2); // duty fijo al 50%
+
+-------------
+¿Qué ocurre con el período de la señal?
+La señal presenta un período variable en el tiempo, lo que se observa como un cambio en la frecuencia medida con el osciloscopio,
+la cual varía aproximadamente entre 2 kHz y 5.4 kHz.
+
+¿Qué ocurre con el duty cycle?
+El duty cycle se mantiene aproximadamente en 50 %, lo que implica que la señal permanece la mitad del tiempo en nivel alto y la otra 
+mitad en nivel bajo.
+
+En este caso, el LED conectado a la salida mantiene un brillo constante, ya que el tiempo en alto respecto al período total no varía 
+significativamente, aunque la frecuencia de la señal sí lo haga.
+
+-------------
+Conclusión comparativa
+
+Test 1: 
+T = 1ms 
+duty cycle: 0 al 100%
+
+Test 2:
+2KHz < T < 5.4KHz
+duty cycle: 50%
+ 
+
+Ambas pruebas son complementarias:
+
+Test 1 demuestra cómo la variación del duty cycle permite controlar directamente el brillo o la potencia del LED.
+Al aumentar el ciclo de trabajo, el voltaje promedio en la salida PWM crece proporcionalmente, incrementando la luminosidad percibida.
+
+Test 2, en cambio, mantiene el duty cycle constante (50%) y varía la frecuencia del PWM. 
+Esto permite analizar la influencia de la frecuencia en la suavidad y estabilidad del brillo. 
+A frecuencias bajas el parpadeo del LED puede ser perceptible, mientras que al aumentar la frecuencia el brillo se vuelve más uniforme 
+a la vista, sin cambios significativos en su intensidad promedio.

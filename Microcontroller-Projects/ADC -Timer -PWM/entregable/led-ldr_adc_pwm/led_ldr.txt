@@ -1,0 +1,9 @@
+Resumen
+
+En esta etapa del proyecto no fue necesario realizar modificaciones en el IDE, ya que se procedió únicamente a la conexión de los periféricos según lo indicado en la consigna.
+
+Como resultado, se observó que al variar la intensidad de luz incidente sobre el LDR, la salida presentaba un cambio proporcional.
+
+A partir de los datos obtenidos en el IDE, se evidenció una relación lineal entre la señal de entrada y la de salida.
+
+En la carpeta led_ldr se incluyen el banco de trabajo y el gráfico generado a partir de los datos obtenidos del LDR.
