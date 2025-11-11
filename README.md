@@ -55,7 +55,14 @@ Covers basic I/O handling, analog acquisition, timer control, and PWM signal gen
 - Analog-to-digital conversion using the STM32’s built-in ADC from a potentiometer and LDR  
 - Timer configuration for precise PWM signal generation  
 - Real-time LED brightness control based on analog input variation.
+  
 
+
+
+https://github.com/user-attachments/assets/b324980d-c6ee-4a99-994d-e11b691de072
+
+
+  
 [Download here](https://github.com/lucianafalcon/Engineering_Portfolio/tree/main/Microcontroller-Projects)  
 Requirements
 Board: STM32 NUCLEO-F103RB
