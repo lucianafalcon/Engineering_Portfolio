@@ -17,6 +17,7 @@ A showcase of my engineering projects and technical work. This repository highli
 
 1. [3D Electronic Component Designs for PCB](#3d-electronic-component-designs-for-pcb)
 2. [Microcontroller Projects](#microcontroller-projects)
+3. [Microelectronic Circuits](#microelectronic-circuits)
 4. [Application and Transport Layers with Wireshark](#application-and-transport-layers-with-wireshark)  
 5. [Communication Network Fundamentals - Vol 1](#communication-network-fundamentals---vol-1)  
 6. [Communication Network Fundamentals - Vol 2](#communication-network-fundamentals---vol-2)  
@@ -56,18 +57,29 @@ Covers basic I/O handling, analog acquisition, timer control, and PWM signal gen
 - Timer configuration for precise PWM signal generation  
 - Real-time LED brightness control based on analog input variation.
   
-
-
-
 https://github.com/user-attachments/assets/b324980d-c6ee-4a99-994d-e11b691de072
-
-
   
 [Download here](https://github.com/lucianafalcon/Engineering_Portfolio/tree/main/Microcontroller-Projects)  
 Requirements
 Board: STM32 NUCLEO-F103RB
 IDE: STM32CubeIDE
 Libraries: STM32 HAL (Hardware Abstraction Layer)
+
+---
+
+## Microelectronic circuits
+
+Lab 1 – Operational Amplifiers: Applications and Limitations
+Experimental analysis of analog circuits based on the LM741 op-amp.
+Frequency response, slew rate, and non-ideal effects were characterized using LTSpice and practical measurements. Included amplifier, integrator, and rectifier implementations.
+
+[TL1 Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/Microelectronic-Circuits/TL1.pdf) 
+
+Lab 2 – Feedback Stages
+Design and analysis of feedback amplifiers and phase-shift oscillators using BJT BC558B.
+DC biasing, small-signal modeling, frequency response, and THD were compared between theory, simulation, and experiments, confirming the stabilizing effects of negative feedback.
+
+ [TL1 Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/Microelectronic-Circuits/TL2.pdf)  
 
 ---
 
@@ -79,7 +91,7 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
 - **Transport Layer (TCP):** Ensures reliable end-to-end communication  
 - **Tools:** Wireshark captures demonstrate request-response cycles and TCP reliability  
 
-[📄 Full PDF Report](Application_and_Transport_Layers_with_Wireshark.pdf)  
+[Report](Application_and_Transport_Layers_with_Wireshark.pdf)  
 
 ---
 
@@ -91,7 +103,7 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
 - **Illustrations:** Based on Kurose & Ross textbooks  
 - **Purpose:** Provides a solid foundation for understanding networking concepts  
 
-[📄 Full PDF Report](Communication_Network_Fundamentals_Vol_1.pdf)  
+[Report](Communication_Network_Fundamentals_Vol_1.pdf)  
 
 ---
 
@@ -101,7 +113,7 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
 
 - **Topics:** ARP, RIP, OSPF, Distance Vector, Link State, SDN concepts (OpenFlow, P4), Transmission media, Nyquist/Shannon theorems  
 
-[📄 Full PDF Report](Communication_Network_Fundamentals_Vol_2.pdf)  
+[Report](Communication_Network_Fundamentals_Vol_2.pdf)  
 
 ---
 
@@ -116,7 +128,7 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
 - **Function:** Band-reject at 79.5 Hz, low-pass cutoff ~955 Hz  
 - **Applications:** Cardiac monitoring, signal cleaning for accurate diagnostics  
 
-[📄 Full PDF Report](Low-Pass_Twin-T_Notch_Filter.pdf)  
+[Report](Low-Pass_Twin-T_Notch_Filter.pdf)  
 
 ---
 
@@ -134,7 +146,7 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
   - Constant current injection strategy and simulation  
 - **Outcome:** Demonstrates advanced semiconductor knowledge and simulation skills  
 
-[📄 Full PDF Report](MOSFET_Memory_Cell_Programming.pdf)  
+[Report](MOSFET_Memory_Cell_Programming.pdf)  
 
 ---
 
@@ -144,7 +156,7 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
 
 - **Contents:** Project design, planning process, risk management, feasibility, lifecycle, Quality Function Deployment (QFD)  
 
-[📄 Full PDF Report](Proyect_Planning.pdf)  
+[Report](Proyect_Planning.pdf)  
 
 ---
 
@@ -156,7 +168,7 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
 - **BJT:** Parameter extraction, biasing analysis, temperature effects  
 - **MOSFET:** Custom model, amplifier design, distortion analysis, validation with BSP89  
 
-[📄 Full PDF Report](Semiconductor_Device_Modeling.pdf)  
+[Report](Semiconductor_Device_Modeling.pdf)  
 
 ---
 
@@ -167,4 +179,4 @@ Libraries: STM32 HAL (Hardware Abstraction Layer)
 - **Methods:** FFT, STFT, TD-PSOLA, Phase Vocoder  
 - **Applications:** Pitch shifting, speed modification, intelligibility preservation  
 
-[📄 Full PDF Report](Voice_Signal_Characterization.pdf)  
+[Report](Voice_Signal_Characterization.pdf)  
