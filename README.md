@@ -79,7 +79,7 @@ Lab 2 – Feedback Stages
 Design and analysis of feedback amplifiers and phase-shift oscillators using BJT BC558B.
 DC biasing, small-signal modeling, frequency response, and THD were compared between theory, simulation, and experiments, confirming the stabilizing effects of negative feedback.
 
- [TL1 Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/Microelectronic-Circuits/TL2.pdf)  
+ [TL2 Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/Microelectronic-Circuits/TL2.pdf)  
 
 ---
 
