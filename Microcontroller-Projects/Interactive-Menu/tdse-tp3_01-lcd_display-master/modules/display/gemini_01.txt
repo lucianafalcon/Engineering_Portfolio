@@ -1,0 +1,127 @@
+## Análisis del Código para Control de Display LCD
+
+### **Archivo display.h**
+
+#### **1. Guardas de Inclusión**
+```cpp
+#ifndef _DISPLAY_H_
+#define _DISPLAY_H_
+```
+- Previenen la inclusión múltiple del archivo header.
+
+#### **2. Tipos de Datos Públicos**
+
+**Enumeración `displayConnection_t`:**
+```cpp
+typedef enum {
+     DISPLAY_CONNECTION_GPIO_4BITS,
+     DISPLAY_CONNECTION_GPIO_8BITS,
+} displayConnection_t;
+```
+- Define los modos de conexión posibles: 4 bits o 8 bits.
+
+**Estructura `display_t`:**
+```cpp
+typedef struct {
+   displayConnection_t connection;                                                 
+} display_t;
+```
+- Almacena la configuración de conexión del display.
+
+#### **3. Prototipos de Funciones Públicas**
+- `displayInit()`: Inicializa el display con el tipo de conexión especificado.
+- `displayCharPositionWrite()`: Posiciona el cursor en coordenadas X,Y.
+- `displayStringWrite()`: Escribe una cadena de texto en el display.
+
+### **Archivo display.cpp**
+
+#### **1. Definiciones Privadas**
+
+**Instrucciones de Control (Registro de Instrucciones):**
+- `DISPLAY_IR_CLEAR_DISPLAY`: Limpia la pantalla
+- `DISPLAY_IR_ENTRY_MODE_SET`: Configura dirección del cursor
+- `DISPLAY_IR_DISPLAY_CONTROL`: Controla visualización/cursor/parpadeo
+- `DISPLAY_IR_FUNCTION_SET`: Configura modo de datos/líneas
+
+**Direcciones de Memoria DDRAM:**
+- Define las direcciones iniciales para cada línea del display 20x4
+
+**Pines de Control y Datos:**
+- RS (Register Select), RW (Read/Write), EN (Enable)
+- D0-D7: Pines de datos
+
+#### **2. Objetos Globales GPIO**
+```cpp
+DigitalOut displayD0( D0 );
+DigitalOut displayD1( D1 );
+// ... hasta displayD7, displayRs, displayEn
+```
+- **DigitalOut**: Clase de Mbed OS para controlar pines GPIO como salidas digitales.
+- Se inicializan con los pines físicos del microcontrolador (D0-D9).
+
+#### **3. Variables Globales Privadas**
+- `display`: Instancia de la estructura display_t
+- `initial8BitCommunicationIsCompleted`: Flag para control de inicialización en modo 4 bits
+
+#### **4. Funciones Privadas**
+
+**`displayPinWrite(uint8_t pinName, int value)`**:
+- Escribe un valor (0/1) en un pin específico
+- Usa `switch` para seleccionar el objeto DigitalOut correspondiente
+- Maneja diferencias entre modos 4 y 8 bits
+
+**`displayDataBusWrite(uint8_t dataBus)`**:
+- Maneja el envío de datos al bus:
+  - **Modo 8 bits**: Envía el byte completo en un ciclo
+  - **Modo 4 bits**: Envía el byte en dos nibbles (4 bits cada uno)
+- Genera pulsos de habilitación (EN) para sincronización
+
+**`displayCodeWrite(bool type, uint8_t dataBus)`**:
+- Envía comandos (RS=0) o datos (RS=1) al display
+- Configura RS y RW apropiadamente
+
+#### **5. Funciones Públicas**
+
+**`displayInit(displayConnection_t connection)`**:
+1. Configura la conexión (4/8 bits)
+2. Secuencia de inicialización según datasheet HD44780
+3. Envía comandos de función set, control de display, clear, etc.
+4. Maneja diferencias entre modos 4 y 8 bits
+
+**`displayCharPositionWrite(uint8_t charPositionX, uint8_t charPositionY)`**:
+- Calcula dirección DDRAM según línea y posición
+- Usa direcciones predefinidas para display 20x4
+
+**`displayStringWrite(const char * str)`**:
+- Escribe caracteres iterando sobre la cadena
+- Usa `DISPLAY_RS_DATA` para enviar datos
+
+### **Gestión de GPIOs del Microcontrolador**
+
+#### **Estrategia Implementada:**
+
+1. **Abstracción por Capas:**
+   - **Capa baja**: `displayPinWrite()` - Control directo de pines
+   - **Capa media**: `displayDataBusWrite()` - Manejo del bus de datos
+   - **Capa alta**: `displayCodeWrite()` - Envío de comandos/datos
+
+2. **Control de Pines:**
+   - Usa la clase **DigitalOut** de Mbed OS
+   - Cada pin se controla individualmente mediante objetos DigitalOut
+   - Ejemplo: `displayD0 = value` escribe en el pin físico D0
+
+3. **Protocolo de Comunicación:**
+   - **Señalización**: RS (comando/dato), EN (habilitación), RW (lectura/escritura)
+   - **Timing**: Delays entre operaciones para cumplir con tiempos del display
+   - **Sincronización**: Pulso en EN para capturar datos
+
+4. **Modos de Operación:**
+   - **8 bits**: Todos los pines D0-D7 utilizados
+   - **4 bits**: Solo D4-D7, con envío en dos ciclos
+
+#### **Ventajas de la Implementación:**
+- Código portable entre microcontroladores compatibles con Mbed OS
+- Manejo eficiente de recursos (solo pines necesarios)
+- Cumple con protocolo estándar de displays LCD HD44780
+
+Esta implementación proporciona una interfaz limpia para controlar displays LCD alfanuméricos mientras maneja eficientemente los detalles de bajo nivel del hardware GPIO.
