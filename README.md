@@ -81,6 +81,18 @@ DC biasing, small-signal modeling, frequency response, and THD were compared bet
 
  [TL2 Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/Microelectronic-Circuits/TL2.pdf)  
 
+Lab 3 – Cascode MOSFET Amplifier: High-Frequency Characterization
+
+Analysis of a dual-gate MOSFET BF966 configured as a cascode (common-source + common-gate).
+DC operating points, small-signal parameters, voltage gain, and input/output resistances were determined analytically, simulated in LTSpice, and verified experimentally.
+
+A full AC sweep was performed to compare measured and simulated Bode plots.
+Instrumentation effects were analyzed: the 10× passive probe and coaxial cable reduced the measured high-frequency bandwidth due to added parasitic capacitance. Using an active probe significantly increased the upper cutoff frequency, matching theoretical predictions.
+
+FFT measurements (oscilloscope and LTSpice .FOUR) were used to evaluate distortion, confirming linear operation and validating the amplifier model.
+
+ [TL3 Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/Microelectronic-Circuits/TL3.pdf)  
+
 ---
 
 ## Application and Transport Layers with Wireshark
