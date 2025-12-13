@@ -137,7 +137,7 @@ FFT measurements (oscilloscope and LTSpice .FOUR) were used to evaluate distorti
 - **Function:** Band-reject at 79.5 Hz, low-pass cutoff ~955 Hz  
 - **Applications:** Cardiac monitoring, signal cleaning for accurate diagnostics  
 
-[Report](Low-Pass_Twin-T_Notch_Filter.pdf)  
+[Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/Low-Pass_Twin-T_Notch_Filter/Low-Pass_Twin-T_Notch_Filter.pdf)  
 
 ---
 
