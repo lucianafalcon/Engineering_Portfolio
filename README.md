@@ -19,13 +19,12 @@ A showcase of my engineering projects and technical work. This repository highli
 2. [Microcontroller Projects](#microcontroller-projects)
 3. [Microelectronic Circuits](#microelectronic-circuits)
 4. [Application and Transport Layers with Wireshark](#application-and-transport-layers-with-wireshark)  
-5. [Communication Network Fundamentals - Vol 1](#communication-network-fundamentals---vol-1)  
-6. [Communication Network Fundamentals - Vol 2](#communication-network-fundamentals---vol-2)  
-7. [Low-Pass Twin-T Notch Filter](#low-pass-twin-t-notch-filter)  
-8. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)  
-9. [Project Planning](#project-planning)  
-10. [Semiconductor Device Modeling](#semiconductor-device-modeling)  
-11. [Voice Signal Characterization](#voice-signal-characterization)  
+5. [Communication Network Fundamentals](#communication-network-fundamentals---vol-1)  
+6. [Low-Pass Twin-T Notch Filter](#low-pass-twin-t-notch-filter)  
+7. [MOSFET Memory Cell Programming](#mosfet-memory-cell-programming)  
+8. [Project Planning](#project-planning)  
+9. [Semiconductor Device Modeling](#semiconductor-device-modeling)  
+10. [Voice Signal Characterization](#voice-signal-characterization)  
 
 ---
 
@@ -37,7 +36,7 @@ A showcase of my engineering projects and technical work. This repository highli
   <img width="584" height="356" alt="img-3d-components- (1)" src="https://github.com/user-attachments/assets/f9123d49-4aaa-44ad-8958-f7789be5ae5b" />
 </p>
 
-[Download here](https://github.com/lucianafalcon/Engineering_Portfolio/tree/main/Component-Design)  
+[Download here](https://github.com/lucianafalcon/Engineering_Portfolio/tree/main/3D-Electronic-Component-Designs-for-PCB)  
 Files are in **.FCStd** and can be converted to **.STEP** for PCB software.
 
 ---
