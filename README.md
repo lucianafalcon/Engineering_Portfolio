@@ -188,4 +188,4 @@ FFT measurements (oscilloscope and LTSpice .FOUR) were used to evaluate distorti
 - **Methods:** FFT, STFT, TD-PSOLA, Phase Vocoder  
 - **Applications:** Pitch shifting, speed modification, intelligibility preservation  
 
-[Report](Voice_Signal_Characterization.pdf)  
+[Report](https://github.com/lucianafalcon/Engineering_Portfolio/blob/main/voice-signal-characterization/informe_tecnico_es.pdf)  
