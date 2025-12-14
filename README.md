@@ -116,16 +116,6 @@ FFT measurements (oscilloscope and LTSpice .FOUR) were used to evaluate distorti
 
 ---
 
-## Communication Network Fundamentals - Vol 2
-
-**Summary:** Advanced topics in networking, including LANs, routing protocols, SDN, and physical layer theory.
-
-- **Topics:** ARP, RIP, OSPF, Distance Vector, Link State, SDN concepts (OpenFlow, P4), Transmission media, Nyquist/Shannon theorems  
-
-[Report](Communication_Network_Fundamentals_Vol_2.pdf)  
-
----
-
 ## Low-Pass Twin-T Notch Filter
 
 **Summary:** Design and simulation of a filter to remove 79.5 Hz interference while allowing other signals to pass, useful for ECG devices.
