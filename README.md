@@ -33,7 +33,7 @@ A showcase of my engineering projects and technical work. This repository highli
 **Summary:** 3D models of electronic components I created because they are not available in standard PCB libraries.
 
 <p align="center">
-  <img width="584" height="356" alt="img-3d-components- (1)" src="https://github.com/user-attachments/assets/f9123d49-4aaa-44ad-8958-f7789be5ae5b" />
+  <img width="584" alt="img-3d-components- (1)" src="https://github.com/user-attachments/assets/f9123d49-4aaa-44ad-8958-f7789be5ae5b" />
 </p>
 
 [Download here](https://github.com/lucianafalcon/Engineering_Portfolio/tree/main/3D-Electronic-Component-Designs-for-PCB)  
